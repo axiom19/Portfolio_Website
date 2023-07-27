@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shaq Lite</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        .card {
+          background: transparent;
+          border: 2px solid white;
+          border-radius: 30px;
+          box-shadow: none;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+        body {
+        background-color: #1D0F0F;
+<!--          background: url('https://unsplash.com/photos/HauxSOFvh6k') no-repeat center center fixed;-->
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+        }
+    </style>
+    <a href={{url_for('home')}} class="btn btn bg-dark text-white">Home</a>
+</head>
+<body>
+<div class="card bg-secondary text-white" style="width: 18rem;">
+  <img src="static/images/1-2.png" class="card-img-top" alt="image">
+  <div class="card-body">
+    <h5 class="card-title">Discover Greatness</h5>
+    <p class="card-text">You gotta contact me with a job offer to learn more. Money may also work.</p>
+    <a href="singh19@myyahoo.com" class="btn btn bg-dark text-white">E-mail me!!</a>
+      <a href="{{url_for('resume')}}" class="btn btn bg-dark text-white">Resume</a>
+  </div>
+</div><br /><br />
+
+</body>
+</html>
